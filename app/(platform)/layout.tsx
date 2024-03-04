@@ -1,6 +1,6 @@
 import React from "react";
 import { ClerkProvider } from "@clerk/nextjs";
-
+import { Toaster } from "sonner";
 type Props = {
   children: React.ReactNode;
 };
@@ -8,6 +8,7 @@ type Props = {
 const Layout = ({ children }: Props) => {
   return (
     <ClerkProvider>
+      <Toaster />
       <div>{children}</div>;
     </ClerkProvider>
   );
