@@ -10,16 +10,16 @@ generator client {
 
 model Board {
  id            String @id @default(auto()) @map("_id") @db.ObjectId
-//  orgId         String
+ orgId         String
  title         String
-//  imageId       String
-//  imageThumbUrl String
-//  imageFullUrl String
-//  imageUserName String
-//  imageLinkHTML String
+ imageId       String
+ imageThumbUrl String
+ imageFullUrl String
+ imageUserName String
+ imageLinkHTML String
 
-//  createdAt     DateTime @default(now())
-//  updatedAt     DateTime @updatedAt
+ createdAt     DateTime @default(now())
+ updatedAt     DateTime @updatedAt
 }
 
 
